@@ -19,6 +19,9 @@
     font-family: 'Poppins', sans-serif;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 img{
     width: 200px;
 }
@@ -27,13 +30,20 @@ img{
     color: var(--dark_theme_text);
     height: 100vh;
 }
+.section_header{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.15rem;
+}
 
 /* -----------header section---------- */
 #section_01{
     /* border: 1px solid green; */
-
-    
-    box-shadow: 1px 0 5px 5px rgba(81, 81, 83, 0.933);  
+    position: fixed;
+    width: 100%;
+    background: var(--dark_theme_background);
+    box-shadow: 1px 0 5px 2px rgba(81, 81, 83, 0.933);  
     
 }
 
@@ -63,9 +73,9 @@ img{
 
 .logo span:nth-child(1){
     font-weight: 600;
-    font-size: 2.5rem;
-    background-color: rgb(11, 198, 255);
-    padding: 10px 22px;
+    font-size: 2rem;
+    background-color: #007CED;
+    padding: 5px 15px;
     margin: 10px 5px;
     
     
@@ -100,22 +110,25 @@ img{
 /* ----------- home page---------- */
 #section_02{
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 5fr 6fr;
     align-items: center;
     justify-content: center;
     
-    height: 70vh;
+    height: 100vh;
 }
 .photo{
     text-align: right;
-    padding-right: 30px;
+    padding-right: 50px;
     /* border: 1px solid red; */
+    /* box-shadow: 4px 4px 5px #000; */
 }
 
 #proPhoto img{
-    width: 300px;
+    width: 375px;
     border-radius: 50%;
-    border: 10px solid rgba(81, 81, 83, 0.933);
+    border: 20px solid rgba(81, 81, 83, 0.933);
+    box-shadow: 1px 1px 30px #000;
+
 }
 
 .intro{
@@ -137,7 +150,7 @@ img{
 }
 .intro p{
     line-height: 1.5rem;
-    margin: 20px 0;
+    margin: 20px 0 30px 0;
     font-weight: 300;
 }
 /*------------------------ button ----------------- */
@@ -147,7 +160,7 @@ img{
     
     padding: 10px 30px;
     color: #fff;
-    margin: 0 10px;
+    margin: 0 20px 0 0;
     border-radius: 45px;
     box-shadow: 0 4px 5px #000;
     background-color: #474545;
@@ -168,3 +181,100 @@ img{
 }
 
 /* ----------- home page end---------- */
+/* ----------- contact section 05 start---------- */
+#section_05{
+    box-sizing: border-box;
+    height: 100vh;
+    /* width: 100vw; */
+    /* border-top: 1px solid red; */
+    padding-top: 70px;
+    background-color: var(--dark_theme_background);
+}
+.section_header{
+    margin: 30px auto;
+}
+.inner_section_05{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+
+}
+.message, .address{
+    /* margin: auto 80px; */
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+    /* border: 1px solid red; */
+    
+}
+.message{
+    margin-left: 150px;
+}
+.address{
+    margin-right: 150px;
+}
+.message input, .message textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+
+    background: transparent;
+    border: 2px solid #d5d5d5;
+    border-radius: 8px;
+    padding: 7px 10px;
+    color: var(--dark_theme_text);
+    outline: none;
+    font-size: 1rem;
+
+    border: 2px solid #007CED;
+    /* background-color: #474545; */
+    box-shadow: 0 4px 5px #000;
+    
+}
+.message input[type="submit"]{
+    display: block;
+    width: 30%;
+    border: 2px solid #007CED;
+    background-color: #474545;
+    box-shadow: 0 4px 5px #000;
+
+
+    
+    
+    text-transform: capitalize;
+    border-radius: 40px;
+}
+
+/* -------------------map and address ----------------- */
+.map{
+    filter: invert(90%);
+    margin-bottom: 30px;
+}
+.address_item{
+   display: grid;
+   grid-template-columns: 1fr 11fr; 
+   margin-bottom: 15px;
+   grid-gap: 20px;
+   overflow: hidden;
+    
+}
+
+.address_item img{
+    width: 120%;
+    margin-top: 10px;
+}
+.text span{
+    display: block;
+    line-height: 1.1rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.text span:first-child{
+    font-size: 1.2rem;
+    font-weight: 500;
+    /* margin-bottom: -10px; */
+}
+
+/* ----------- contact section 05 end---------- */
+
+
+
