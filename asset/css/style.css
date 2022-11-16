@@ -295,6 +295,29 @@ header{
 }
 
 /* ----------- contact section 05 end---------- */
+/* ----------- contact section 05 end---------- */
+#copyright_section{
+    border-top: 1px solid #dddeee;
+    
+}
+.copyright_section_item{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+.copyright_section_item p:first-child a{
+    color: #dddeee;
+    text-decoration: none;
+    margin: 0 10px;
+    /* transition: 0.5s; */
+}
+
+.copyright_section_item p:first-child a:hover{
+    color: #fff;
+    
+}
+
 
 
 
