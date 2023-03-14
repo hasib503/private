@@ -125,7 +125,7 @@ header{
 /* -----------header section end---------- */
 
 /* ----------- home page---------- */
-#section_02{
+#landing_page{
     display:grid;
     grid-template-columns: 5fr 6fr;
     align-items: center;
@@ -198,6 +198,160 @@ header{
     color: var(--white_theme_text);
 }
 
+/* ----------- What I do section---------- */
+
+#section_what_i_do{
+    /* border: 1px solid red; */
+    padding: 10px 40px;
+}
+#section_what_i_do .seaction_heading{
+    position: relative;
+    /* border: 2px solid red; */
+}
+#section_what_i_do .seaction_heading span{
+    position: absolute;
+    font-size: 25px;
+    font-weight: 600;
+    /* border: 1px solid red; */
+    
+}
+#section_what_i_do .seaction_heading i{
+    position: absolute;
+    bottom: -40px;
+    height: 2px;
+    width: 40px;
+    background-color: #007CED;
+}
+#section_what_i_do .seaction_heading i:nth-child(2){
+    position: absolute;
+    bottom: -40px;
+    height: 2px;
+    width: 120px;
+    background-color: #676772;
+}
+.seaction_what_i_do_container{
+    /* border: 1px solid #fff; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 10px 10px 10px; 
+}
+.child_what_i_do{
+    padding: 10px 20px;
+    /* border: 1px solid #007CED; */
+    display: flex;
+}
+.child_what_i_do .icon img{
+    width: 60px;
+    /* border: 1px solid red; */
+    margin-right: 10px;
+}
+.child_what_i_do .description span{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+
+/* ----------- testimonial section---------- */
+
+#section_testimonial{
+    /* border: 1px solid red; */
+    height: 70vh;
+    padding: 50px 40px;
+    
+}
+#section_testimonial .seaction_heading{
+    position: relative;
+    /* border: 2px solid red; */
+}
+#section_testimonial .seaction_heading span{
+    position: absolute;
+    font-size: 25px;
+    font-weight: 600;
+    /* border: 1px solid red; */
+    
+}
+#section_testimonial .seaction_heading i{
+    position: absolute;
+    bottom: -40px;
+    height: 2px;
+    width: 40px;
+    background-color: #007CED;
+}
+#section_testimonial .seaction_heading i:nth-child(2){
+    position: absolute;
+    bottom: -40px;
+    height: 2px;
+    width: 120px;
+    background-color: #676772;
+}
+
+
+
+.seaction_testimonial{
+    /* border: 1px solid #fff; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 40px;
+
+   
+    
+}
+.testimonial_1, .testimonial_2{
+    /* border: 1px solid #fff; */
+    position: relative;
+    height: 300px;
+}
+.testimonial_1 img, .testimonial_2 img{
+    position: absolute;
+    border-radius: 50%;
+    width: 80px;
+    top: 20px;
+}
+
+.testimonial_1 div, .testimonial_2 div{
+    position: absolute;
+    top: 40px;
+    margin: 20px;
+    margin-left: 40px;
+    padding: 30px;
+    background-color: rgba(165, 152, 152, 0.1);;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* border: 1px solid red; */
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.2);;
+    border-radius: 4px;
+    z-index: -1;
+    
+}
+
+.testimonial_description h2{
+    /* border: 1px solid red; */
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.testimonial_description span{
+    
+    font-weight: 200;
+    margin-top: 16px;
+}
+
+
+
+.testimonial_1 img:nth-last-child(1), .testimonial_2 img:nth-last-child(1){
+    
+    border-radius: 0;
+    opacity: 0.1;
+    width: 40px;
+    
+    top: 75%;
+    right: -25px;
+    z-index: -10;
+}
+
 /* ----------- home page end---------- */
 /* ----------- contact section 05 start---------- */
 #section_05{
@@ -205,7 +359,7 @@ header{
     
     /* width: 100vw; */
     /* border-top: 1px solid red; */
-    padding-top: 70px;
+    padding: 60px 40px;
     background-color: var(--dark_theme_background);
 }
 .section_header{
